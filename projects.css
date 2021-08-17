@@ -1,0 +1,125 @@
+.main-display{
+	margin: 125px auto;
+	width: 90%;
+	min-height: 100vh;
+	background: #004c84;
+}
+
+/*tabs*/
+.nav-tabs{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #1E88E5;
+	text-align: center;
+	border-bottom: 3px solid #000;
+	padding: 25px 0 0 0;
+}
+.nav-tabs li{
+	list-style-type: none;
+	margin: 10px 25px;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.nav-tabs li a{
+	text-decoration: none;
+	color: #171818;
+	transition: 0.5s;
+	cursor: pointer;
+	padding: 10px;
+}
+.nav-tabs li.active a{
+	border: 3px solid #000;
+	border-bottom: none;
+	border-radius: 5px 5px 0 0;
+	background: #171818;
+	color: #1E88E5;
+}
+
+/*projects display area*/
+.project-display {
+	width: 100%;
+}
+.project-display > .tab-pane {
+	display: none;
+}
+.project-display > .tab-pane.active {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 25px;
+}
+.project-display > .active {
+	display: block;
+}
+
+
+/*project display cards*/
+.card{
+	background: #171818;
+	width: 300px;
+	margin: 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 10px 15px 10px -2px #000;
+}
+.card-text{
+	height: calc(100% - 150px);
+	padding: 15px;
+}
+.card-text h1{
+	font-size: 2em;
+	font-family: 'Teko', sans-serif;
+}
+.card-text p{
+	margin: 10px auto;
+	font-size: .8em;
+}
+.card-img{
+	width: 100%;
+	height: 150px;
+	margin: auto 0;
+}
+.card-img img{
+	height: 100%;
+	width: 100%;
+}
+
+/*buttons*/
+.card-buttons{
+	display: flex;
+	justify-content: center;
+	margin: 5px auto;
+	font-family: 'Teko', sans-serif;
+}
+.card-buttons a{
+	text-decoration: none;
+	color: #171818;
+	border-radius: 20px;
+	background: #1E88E5;
+	padding: 5px 10px;
+	margin: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.card-buttons a:hover{
+	color: #004c84;
+	background: #e6e6e6;
+	text-decoration: none;
+}
+
+
+/*media queries*/
+@media(max-width: 768px){
+	.nav-tabs li{
+		margin: 10px auto;
+	}
+}
+
+@media(max-width: 600px){
+	.nav-tabs li {
+		font-size: 15px;
+	}
+}

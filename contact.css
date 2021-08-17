@@ -1,0 +1,50 @@
+.contact-box{
+	max-width: 400px;
+	text-align: center;
+	padding: 25px;
+	font-family: 'Teko', sans-serif;
+	color: #e6e6e6;
+}
+
+.contact-box p{
+	outline: none;
+	text-decoration: none;
+	margin: 10px auto;
+	color: #e6e6e6;
+	font-size: 1.8em;
+	font-weight: 700;
+	line-height: 1.2em;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #000;
+}
+
+/*round icons*/
+.contact-box a{
+	outline: none;
+	text-decoration: none;
+	margin: 25px auto;
+	color: #e6e6e6;
+}
+.contact-box i{
+	cursor: pointer;
+	font-size: 50px;
+	padding: 20px;
+	color: #171818;
+	background: #1E88E5;
+	border-radius: 50%;
+}
+.contact-box i:hover{
+	color: #1E88E5;
+	background: #e6e6e6;
+}
+
+
+/*media queries*/
+@media(max-width: 500px){
+	.contact-box{
+		width: 300px;
+	}
+	.contact-box p{
+		font-size: 1.5em;
+	}
+}
